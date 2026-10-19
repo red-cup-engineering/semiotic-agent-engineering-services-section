@@ -1,0 +1,8 @@
+[submodule "capability-pricing-service"]
+	path = services/semiotic-agent-capability-services-section/services/capability-pricing-service
+	url = https://github.com/red-cup-engineering/capability-pricing-service.git
+	branch = main
+[submodule "attention-allocation-readout-service"]
+	path = services/attention-services-section/services/attention-allocation-readout-service
+	url = https://github.com/red-cup-engineering/attention-allocation-readout-service.git
+	branch = main
