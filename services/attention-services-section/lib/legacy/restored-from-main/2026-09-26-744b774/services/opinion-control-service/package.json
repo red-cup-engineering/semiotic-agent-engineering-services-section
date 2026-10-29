@@ -1,0 +1,37 @@
+{
+  "name": "@red-cup-engineering/opinion-control-service",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Admits explicit operator opinions, folds their event journal into a control, and measures subjects against that control.",
+  "exports": {
+    ".": "./src/opinion-control.mjs",
+    "./scripts/admit-opinion.mjs": "./scripts/admit-opinion.mjs",
+    "./scripts/read-opinions.mjs": "./scripts/read-opinions.mjs",
+    "./scripts/measure-opinions.mjs": "./scripts/measure-opinions.mjs"
+  },
+  "bin": {
+    "admit-opinion": "./scripts/admit-opinion.mjs",
+    "read-opinions": "./scripts/read-opinions.mjs",
+    "measure-opinions": "./scripts/measure-opinions.mjs"
+  },
+  "files": [
+    "src",
+    "scripts"
+  ],
+  "scripts": {
+    "check": "node --check src/opinion-control.mjs && node --check scripts/admit-opinion.mjs && node --check scripts/read-opinions.mjs && node --check scripts/measure-opinions.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@red-cup-engineering/metrologic": "0.3.0",
+    "@red-cup-engineering/computer-content-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/computer-text-content-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "0.3.0",
+    "@red-cup-engineering/javascript-node-services-section": "0.3.0",
+    "@red-cup-engineering/json-services-section": "1.0.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "sideEffects": false
+}

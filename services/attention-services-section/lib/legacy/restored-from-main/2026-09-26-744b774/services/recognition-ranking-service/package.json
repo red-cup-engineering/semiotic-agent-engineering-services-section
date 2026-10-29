@@ -1,0 +1,27 @@
+{
+  "name": "@red-cup-engineering/recognition-ranking-service",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Deterministically ranks explicit recognition evidence by epistemic tier, observed weight, and stable URI order.",
+  "exports": {
+    ".": "./src/recognition-ranking.mjs",
+    "./scripts/read-recognition.mjs": "./scripts/read-recognition.mjs",
+    "./scripts/weight-recognition.mjs": "./scripts/weight-recognition.mjs"
+  },
+  "bin": {
+    "read-recognition": "./scripts/read-recognition.mjs",
+    "weight-recognition": "./scripts/weight-recognition.mjs"
+  },
+  "files": [
+    "src",
+    "scripts"
+  ],
+  "scripts": {
+    "check": "node --check src/recognition-ranking.mjs && node --check scripts/read-recognition.mjs && node --check scripts/weight-recognition.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "sideEffects": false
+}
